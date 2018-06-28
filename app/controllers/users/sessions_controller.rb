@@ -5,7 +5,7 @@ class Users::SessionsController < Devise::SessionsController
 
   # GET /resource/sign_in
   # def new
-  #   super
+  #    UserMailer.welcome_email(@user).deliver
   # end
 
   # POST /resource/sign_in
@@ -24,4 +24,6 @@ class Users::SessionsController < Devise::SessionsController
   # def configure_sign_in_params
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
+  
+
 end
